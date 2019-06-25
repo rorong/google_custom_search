@@ -1,10 +1,9 @@
 # Google Custom Search
 
-Search for any keyword using Gem- https://github.com/wiseleyb/google_custom_search_api and got google serach results
+Search for any keyword using Gem- https://github.com/wiseleyb/google_custom_search_api and got google search results
 
 * Google Custom Search GEM - https://github.com/wiseleyb/google_custom_search_api
 
-![Screenshot](doc/search_keyword.png)
 ![Screenshot](doc/search_results.png)
 
 ## Prerequisites:
@@ -28,4 +27,3 @@ The required settings are `google_api_key` and `google_search_cx`.
 
 Running / Development:
 * rails s
-# google_custom_search

@@ -1,10 +1,8 @@
 # frozen_string_literal: true
-
+# The is responsible for getting search results
 class HomeController < ApplicationController
   def search_result
-    @search_title = params[:keyword]
-    search_results = GoogleCustomSearchApi.search(@search_title)
-    binding.pry
+    search_results = GoogleCustomSearchApi.search(params[:keyword])
     @results = []
     search_results['items'].each do |item|
       @results << item
