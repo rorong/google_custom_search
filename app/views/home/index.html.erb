@@ -1,0 +1,10 @@
+<div class="container text-center">
+  <h1>Please enter keyword to search</h1>
+  <div class="form-group"><input class="form-control srch_keyword" type="text" placeholder="Enter keyword to search..">
+  </div>
+  <button class="btn btn-info seacrh_btn">Search</button>
+  <div id="data_cls" class='form-group'>
+    <%= render partial: 'home/search_list', locals: { results: @results, search_title: @search_title} %>
+  </div>
+</div>
+

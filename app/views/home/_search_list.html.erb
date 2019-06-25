@@ -1,0 +1,9 @@
+<div class="container">
+  <% if results.present? %>
+    <% results.each_with_index do |item , index| %>
+      <h3><%= "#{index + 1}" + ">"%><%= link_to item["title"], item["link"], target: "_blank", class: "default_btn"%></h3>
+      <p><%= item["snippet"]%></p>
+    <% end %>
+  <% end %>
+</div>
+
